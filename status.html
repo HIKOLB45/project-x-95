@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статус Системи | PROJECT_X v5.0</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        .console {
+            background: #000;
+            border: 1px solid var(--primary);
+            padding: 30px;
+            border-radius: 15px;
+            font-family: 'Roboto Mono', monospace;
+            box-shadow: 0 0 40px rgba(0, 242, 255, 0.1);
+        }
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            background: var(--primary);
+            animation: blink 1s infinite;
+            vertical-align: middle;
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+        .log-entry { margin-bottom: 10px; font-size: 0.9rem; }
+        .log-success { color: #10b981; }
+        .log-info { color: var(--primary); }
+    </style>
+</head>
+<body>
+
+    <nav class="nav-fixed">
+        <div class="logo-text">PROJECT_X // TERMINAL</div>
+        <div style="display: flex; gap: 20px;">
+            <a href="index.html" style="color: var(--primary); text-decoration: none; font-family: 'Orbitron'; font-size: 0.8rem;">ГОЛОВНА</a>
+            <a href="estimate.html" style="color: var(--primary); text-decoration: none; font-family: 'Orbitron'; font-size: 0.8rem;">КОШТОРИС</a>
+        </div>
+    </nav>
+
+    <div style="padding: 120px 20px; max-width: 1000px; margin: 0 auto;">
+        <h1 style="font-family: 'Orbitron'; color: var(--primary); margin-bottom: 40px; text-align: center;">МОНІТОРИНГ ПРОЕКТУ</h1>
+
+        <div class="console">
+            <div class="log-entry log-success">[OK] СИСТЕМА ЗАПУЩЕНА...</div>
+            <div class="log-entry log-info">[INFO] КАРКАС: 5000x4800мм - ПЕРЕВІРЕНО</div>
+            <div class="log-entry log-info">[INFO] МАТЕРІАЛ: STEEL_S235JR - ПЕРЕВІРЕНО</div>
+            <div class="log-entry log-info">[INFO] ОПОРИ: 6 ОДИНИЦЬ - СИНХРОНІЗОВАНО</div>
+            <div class="log-entry">[WAIT] ОЧІКУВАННЯ ПОЧАТКУ МОНТАЖУ...</div>
+            <div class="log-entry">-------------------------------------------</div>
+            <div class="log-entry">> ГОТОВНІСТЬ ДО ЗВАРЮВАННЯ: 100%</div>
+            <div class="log-entry">> ГОТОВНІСТЬ ФУНДАМЕНТУ: 0% (ПОТРЕБУЄ ДІЇ)</div>
+            <div class="log-entry">> ВІЗУАЛІЗАЦІЯ: ACTIVE<span class="cursor"></span></div>
+        </div>
+
+        <div style="margin-top: 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <div style="background: var(--surface); padding: 30px; border-radius: 20px; border: var(--neon-border);">
+                <h3 style="font-family: 'Orbitron'; color: var(--primary); margin-bottom: 15px;">⚠️ ПРАВИЛА БЕЗПЕКИ</h3>
+                <ul style="color: var(--text-dim); line-height: 1.8; font-size: 0.9rem;">
+                    <li>Використовувати захисну маску при зварюванні.</li>
+                    <li>Перевіряти вертикальність стійок лазерним рівнем.</li>
+                    <li>Не монтувати профнастил при сильному вітрі.</li>
+                    <li>Використовувати страховку на висоті понад 2 метри.</li>
+                </ul>
+            </div>
+            
+            <div style="background: var(--surface); padding: 30px; border-radius: 20px; border: var(--neon-border);">
+                <h3 style="font-family: 'Orbitron'; color: var(--primary); margin-bottom: 15px;">📈 ПЕРЕВІРКА ВІДКЛОНЕНЬ</h3>
+                <p style="color: var(--text-dim); font-size: 0.9rem;">
+                    Допустиме відхилення стійок по вертикалі: <b>±2мм</b>.<br><br>
+                    Допустиме провисання ферми 5м під навантаженням: <b>12мм</b> (згідно ДБН).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 60px; color: #475569; font-family: 'Roboto Mono';">
+        SYSTEM_V5_REVISION_ALPHA_2026
+    </footer>
+
+</body>
+</html>
