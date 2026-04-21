@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Професійний проект навісу 5х4.8м - Engineering v5.0">
+    <title>ULTIMATE CANOPY SYSTEM | v5.0 Master Edition</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;600;800&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <style>
+        :root {
+            --primary: #00f2ff;
+            --secondary: #0066ff;
+            --bg-dark: #020617;
+            --surface: #0f172a;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --accent-glow: 0 0 20px rgba(0, 242, 255, 0.4);
+            --glass: rgba(15, 23, 42, 0.8);
+            --neon-border: 1px solid rgba(0, 242, 255, 0.2);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Exo 2', sans-serif;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Стилізація навігації */
+        .nav-fixed {
+            position: fixed;
+            top: 0; width: 100%; height: 80px;
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            border-bottom: var(--neon-border);
+        }
+
+        .logo-text {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900; font-size: 1.5rem;
+            color: var(--primary); letter-spacing: 3px;
+            text-shadow: var(--accent-glow);
+        }
+
+        /* Головний екран */
+        .hero-section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at center, rgba(0, 102, 255, 0.1) 0%, transparent 70%),
+                        url('image_c96a66.jpg') center/cover no-repeat;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(2.5rem, 8vw, 5.5rem);
+            background: linear-gradient(to bottom, #fff 40%, var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+        }
+
+        /* Стилі таблиць та карток */
+        .table-wrapper {
+            background: var(--surface);
+            border-radius: 30px;
+            padding: 40px;
+            border: var(--neon-border);
+            margin-top: 50px;
+        }
+
+        .ultra-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 15px;
+        }
+
+        .ultra-table td {
+            padding: 25px 20px;
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .btn-primary {
+            padding: 18px 45px;
+            background: var(--primary);
+            color: #000;
+            text-decoration: none;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 800;
+            clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav-fixed">
+        <div class="logo-text">CANOPY_X</div>
+        <div style="display: flex; gap: 20px;">
+            <a href="#specs" style="color: var(--text-dim); text-decoration: none;">СПЕЦИФІКАЦІЯ</a>
+            <a href="#calc" style="color: var(--text-dim); text-decoration: none;">КАЛЬКУЛЯТОР</a>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">CARBON-STEEL<br>MONSTER</h1>
+            <p style="font-size: 1.2rem; color: var(--text-dim); margin: 20px 0;">ПРОЕКТ ВЕРСІЇ 5.0 | 5х4.8 МЕТРИ</p>
+            <a href="#specs" class="btn-primary">ВІДКРИТИ КРЕСЛЕННЯ</a>
+        </div>
+    </section>
+
+    </body>
+</html>
