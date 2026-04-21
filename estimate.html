@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошторис та Навантаження | v5.0</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="nav-fixed">
+        <div class="logo-text">PROJECT_X // ESTIMATE</div>
+        <div style="display: flex; gap: 20px;">
+            <a href="index.html" style="color: var(--primary); text-decoration: none; font-family: 'Orbitron'; font-size: 0.8rem;">ГОЛОВНА</a>
+            <a href="content.html" style="color: var(--primary); text-decoration: none; font-family: 'Orbitron'; font-size: 0.8rem;">СПЕЦИФІКАЦІЯ</a>
+        </div>
+    </nav>
+
+    <div style="padding: 120px 20px; max-width: 1200px; margin: 0 auto;">
+        <h1 style="font-family: 'Orbitron'; color: var(--primary); margin-bottom: 40px; text-transform: uppercase;">
+            Фінансовий та Технічний звіт
+        </h1>
+
+        <div style="background: var(--surface); padding: 40px; border-radius: 25px; border: var(--neon-border); margin-bottom: 40px;">
+            <h2 style="font-family: 'Orbitron'; font-size: 1.2rem; margin-bottom: 20px; color: var(--primary);">[01] РОЗРАХУНОК ВАГИ МЕТАЛОКОНСТРУКЦІЇ</h2>
+            <div style="font-family: 'Roboto Mono'; color: #00f2ff; line-height: 1.8; background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px;">
+                > Стійки (50х50х3): 6 шт х 2.5м = 15м (66.30 кг)<br>
+                > Головні балки (80х40х3): 2 шт х 4.8м = 9.6м (51.20 кг)<br>
+                > Ферми поперечні (60х40x2): 6 шт х 5.0м = 30м (92.40 кг)<br>
+                > Обрешітка (40х20х2): 7 шт х 5.0м = 35м (61.50 кг)<br>
+                --------------------------------------------------<br>
+                > ЗАГАЛЬНА МАСА КАРКАСУ: 271.40 кг (+5% запас на різ)
+            </div>
+        </div>
+
+        <div class="table-wrapper">
+            <h2 style="font-family: 'Orbitron'; font-size: 1.2rem; margin-bottom: 20px; color: var(--primary);">[02] СТАТИЧНІ НАВАНТАЖЕННЯ</h2>
+            <table class="ultra-table">
+                <thead>
+                    <tr>
+                        <th>Тип навантаження</th>
+                        <th>Значення</th>
+                        <th>Статус безпеки</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Снігове (регіон 2)</td>
+                        <td>160 кг/м²</td>
+                        <td style="color: #10b981;">SAFE [OK]</td>
+                    </tr>
+                    <tr>
+                        <td>Вітрове (до 25 м/с)</td>
+                        <td>45 кг/м²</td>
+                        <td style="color: #10b981;">SAFE [OK]</td>
+                    </tr>
+                    <tr>
+                        <td>Власна вага покрівлі</td>
+                        <td>4.5 кг/м²</td>
+                        <td style="color: #10b981;">OPTIMAL</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="margin-top: 50px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+            <div style="background: rgba(15, 23, 42, 0.5); padding: 30px; border-radius: 20px; border-left: 4px solid var(--primary);">
+                <h3 style="font-family: 'Orbitron'; font-size: 1rem; margin-bottom: 15px;">РОЗХІДНИКИ</h3>
+                <ul style="list-style: square; padding-left: 20px; color: var(--text-dim);">
+                    <li>Електроди АНО-21 (3мм) - 5 кг</li>
+                    <li>Відрізні круги (125мм) - 10 шт</li>
+                    <li>Ґрунт-емаль 3в1 - 4.5 кг</li>
+                    <li>Покрівельні саморізи - 150 шт</li>
+                </ul>
+            </div>
+            <div style="background: rgba(15, 23, 42, 0.5); padding: 30px; border-radius: 20px; border-left: 4px solid #f59e0b;">
+                <h3 style="font-family: 'Orbitron'; font-size: 1rem; margin-bottom: 15px; color: #f59e0b;">БЕТОННІ РОБОТИ</h3>
+                <ul style="list-style: square; padding-left: 20px; color: var(--text-dim);">
+                    <li>Цемент М500 - 3 мішки</li>
+                    <li>Пісок/Щебінь - 0.5 м³</li>
+                    <li>Арматура (8мм) - 12 м</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 60px; border-top: 1px solid #1e293b; color: #475569;">
+        PROJECT: NAVES_PRO_V5 // BUILD_LOG_2026
+    </footer>
+
+</body>
+</html>
